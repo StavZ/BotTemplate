@@ -24,6 +24,7 @@ module.exports.run = async (client, message) => {
     if (!cmd) return;
 
     if (cmd.guildOnly && message.channel.type == 'dm') return message.reply(`This command is not available in DMs`);
+    if (cmd.owner && message.author.id !== client.owner) return message.reply(`You don't have permissions to use this command`)
 
     try {
         cmd.exec(message, args);
