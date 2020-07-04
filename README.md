@@ -19,12 +19,6 @@ Go to this repository
 cd BotTemplate
 ```
 
-NPM initialization
-
-```bash
-npm init -y
-```
-
 Install dependencies
 
 ```bash
